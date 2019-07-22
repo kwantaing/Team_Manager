@@ -1,0 +1,13 @@
+
+    
+div{
+    width:100%;
+    text-align:left;
+}
+ul{
+    text-align:center;
+}
+li{
+    display:inline-block;
+    margin:0 20px;
+}

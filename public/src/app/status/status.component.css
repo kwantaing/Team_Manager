@@ -1,0 +1,22 @@
+html{
+    display:inline-block;
+}
+
+.btn{
+    margin:5px;
+}
+.playing{
+    background-color:green;
+}
+ 
+.notPlaying{
+    background-color: red;
+}
+
+.undecided{
+    background-color: yellow;
+}
+li{ 
+    display:inline-block;
+    margin: 0 10px;
+}

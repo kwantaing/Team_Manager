@@ -1,0 +1,9 @@
+html{
+    margin:5px;
+    padding:5px;
+    text-align:center;
+}
+li{
+    display:inline-block;
+    margin: 0 15px;
+}

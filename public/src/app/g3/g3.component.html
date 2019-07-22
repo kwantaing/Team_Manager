@@ -1,0 +1,19 @@
+<h1>Player Status - Game #{{game}}</h1>
+<table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let player of roster">
+                <td>{{player.name}}</td>
+                <td>
+                    <button (click)="toPlaying(player._id)" class="btn" [ngClass]="{playing: player.G3=='playing'}">Playing</button>
+                    <button (click)="notPlaying(player._id)" class="btn"[ngClass]="{notPlaying:player.G3=='not_playing'}">Not Playing</button>
+                    <button (click)="toUndecided(player._id)" class="btn"[ngClass]="{undecided:player.G3 =='undecided'}">Undecided</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>

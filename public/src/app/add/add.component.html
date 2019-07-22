@@ -1,0 +1,11 @@
+<div class="main">
+    <form (submit)="onCreate(newPlayer)" class="form-group">
+        <p style="color:black;">Player name</p>
+        <input type="text" class="form-control"name="newPlayer.name" [(ngModel)]="newPlayer.name" required minlength="3" maxlength="20" #name="ngModel">
+        <span *ngIf="name.errors"> Please enter a player name with more than 3 characters</span>
+        <p style="color:black;">Preferred Position</p>
+        <input type="text"class="form-control" name="newPlayer.position" [(ngModel)]="newPlayer.position" placeholder="(optional)">
+        <button class="btn btn-primary" *ngIf="name.errors" disabled="disabled">Add Player</button>
+        <button class="btn btn-primary" *ngIf="!name.errors">Add Player</button>
+    </form>
+</div>

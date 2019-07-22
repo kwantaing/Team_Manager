@@ -1,0 +1,15 @@
+.main{
+    width:100%;
+    text-align:center;
+    display:inline-block;
+}
+table{
+    text-align:center;
+}
+thead{
+    text-align:center;
+}
+html{
+    display:inline-block;
+    text-align:center;
+}

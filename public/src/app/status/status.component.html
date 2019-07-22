@@ -1,0 +1,27 @@
+<div class="main">
+    <h2>Please select a game to check:</h2>
+    <ul>
+        <li><a [routerLink]="['/status/game/1']" >Game 1</a></li>|
+        <li><a [routerLink]="['/status/game/2']" >Game 2</a></li>|
+        <li><a [routerLink]="['/status/game/3']" >Game 3</a></li>
+    </ul>
+        <!-- <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let player of roster">
+                    <td>{{player.name}}</td>
+                    <td>
+                        <button (click)="toPlaying(player._id)" class="btn" [ngClass]="{playing: player.G1=='playing'}">Playing</button>
+                        <button (click)="notPlaying(player._id)" class="btn"[ngClass]="{notPlaying:player.G1=='not_playing'}">Not Playing</button>
+                        <button (click)="toUndecided(player._id)" class="btn"[ngClass]="{undecided:player.G1 =='undecided'}">Undecided</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table> -->
+        <router-outlet></router-outlet>
+    </div>

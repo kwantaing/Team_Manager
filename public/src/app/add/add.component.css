@@ -1,0 +1,20 @@
+*{
+    text-align:center;
+}
+form{
+    margin: 5px 10px;
+    width:60%;
+    display:inline-block;
+}
+
+.ng-invalid{
+    color:red;
+}
+
+.ng-valid{
+    color:green;
+}
+
+button{
+    margin: 15px;
+}
